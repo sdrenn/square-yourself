@@ -1,2 +1,6 @@
 .python-version
 __pycache__
+*.spec
+*.c
+*.so
+build
