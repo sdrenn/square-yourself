@@ -24,9 +24,9 @@ jobs:
       - name: Build
         run: |
           python setup.py build_ext --inplace
-          pyinstaller -F run.py
+          pyinstaller -F run.py -n run
       - name: Save build
         uses: actions/upload-artifact@v3
         with:
-          name: run-${{ matrix.os }}
+          name: square-yourself-${{ matrix.os }}
           path: dist/run
