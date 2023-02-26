@@ -28,5 +28,5 @@ jobs:
       - name: Save build
         uses: actions/upload-artifact@v3
         with:
-          name: dist/run
-          path: dist/run_${{ matrix.os }}
+          name: run-${{ matrix.os }}
+          path: dist/run
